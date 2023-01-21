@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="w-full flex justify-between items-center py-[30px]">
       <img src={logo} alt="logo image" className="w-[124px] h-[32px]" />
 
-      <ul className="sm:flex hidden flex-row">
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((link, index) => (
           <li
             key={link.titel}
@@ -29,14 +29,14 @@ const Navbar = () => {
           src={toggle ? close : menu}
           alt=""
           onClick={() => setToggle(!toggle)}
-          className="w-[28px] h-[28px]"
+          className="w-[28px] h-[28px] cursor-pointer"
         />
       </div>
 
       <div
         className={`${
           toggle ? "sm:hidden" : "hidden"
-        } sidebar bg-black-gradient rounded p-6 flex items-center text-center absolute top-20 right-5`}
+        } sidebar bg-black-gradient rounded-[10px] p-6 flex items-center text-center absolute top-20 right-5`}
       >
         <ul>
           {navLinks.map((link, index) => (
