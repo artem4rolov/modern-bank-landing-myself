@@ -1,10 +1,21 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import {
+  Brands,
+  Business,
+  Card,
+  Control,
+  Footer,
+  GetStarted,
+  Hero,
+  Navbar,
+  People,
+  Statistic,
+  TryService,
+} from "../src/components/index";
 
 import styles from "./styles/styles";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div className="bg-primary w-full overflow-hidden font-poppins">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
@@ -17,9 +28,18 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <div
+      className={`bg-primary ${styles.paddingX} ${styles.flexCenter} z-[20]`}
+    >
       <div className={`${styles.boxWidth}`}>
-        Statistic Business Control Card People Brands TryService Footer
+        <Statistic />
+        <Business />
+        <Control />
+        <Card />
+        <People />
+        <Brands />
+        <TryService />
+        <Footer />
       </div>
     </div>
   </div>
