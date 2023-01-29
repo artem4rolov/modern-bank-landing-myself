@@ -12,13 +12,13 @@ const Business = () => {
   return (
     <section
       id="business"
-      className={`flex flex-col md:flex-row ${styles.paddingY}`}
+      className={`flex flex-col items-center md:flex-row ${styles.paddingY}`}
     >
       <div className="flex-1 mb-5">
         <div className="text-white text-[48px] font-semibold mb-10">
           You do the business, <br /> we’ll handle the money.
         </div>
-        <div className="text-dimWhite text-[18px] mb-10">
+        <div className="text-dimWhite text-[18px] mb-10 max-w-[570px]">
           With the right credit card, you can improve your financial life by
           building credit, earning rewards and saving money. But with hundreds
           of credit cards on the market.
@@ -26,12 +26,12 @@ const Business = () => {
         <Button />
       </div>
 
-      <div className="flex-1 flex-col">
+      <div className="flex-1 flex-col ml-5">
         {cardBusiness.map((card, index) => (
           <div
             key={card.title}
             className={`${
-              active === index ? "bg-black-gradient-2 box-shadow" : null
+              active === index ? "bg-black-gradient-2 box-shadow" : "opacity-50"
             } rounded-[20px] flex items-center p-4 cursor-pointer hover:bg-sky-900 mt-3`}
             onClick={() => setActive(index)}
           >

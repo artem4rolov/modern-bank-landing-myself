@@ -45,3 +45,65 @@ export const cardBusiness = [
     img: send,
   },
 ];
+
+export const peopleCard = [
+  {
+    name: "Herman Jensen",
+    role: "Founder & Leader",
+    text: "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+    img: people01,
+  },
+  {
+    name: "Steve Mark",
+    role: "Founder & Leader",
+    text: "Money makes your life easier. If you're lucky to have it, you're lucky.",
+    img: people02,
+  },
+  {
+    name: "Kenn Gallagher",
+    role: "Founder & Leader",
+    text: "It is usually people in the money business, finance, and international trade that are really rich.",
+    img: people03,
+  },
+];
+
+export const brands = [
+  { id: "airbnb", img: airbnb },
+  { id: "binance", img: binance },
+  { id: "coinbase", img: coinbase },
+  { id: "dropbox", img: dropbox },
+];
+
+export const footerLinks = [
+  {
+    title: "Usefull Links",
+    links: [
+      { name: "Content" },
+      { name: "How it Works" },
+      { name: "Create" },
+      { name: "Explore" },
+      { name: "Terms & Services" },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      { name: "Help Center" },
+      { name: "Partners" },
+      { name: "Suggestions" },
+      { name: "Blog" },
+      { name: "Newsletters" },
+    ],
+  },
+  {
+    title: "Partner",
+    links: [{ name: "Our Partner" }, { name: "Become a Partner" }],
+  },
+];
+
+export const socialMedia = [
+  { img: instagram },
+  { img: facebook },
+  { img: twitter },
+  { img: linkedin },
+];
